@@ -1,0 +1,30 @@
+.calc {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding:20px;
+	background-color: #14406F;
+	border-radius: 10px;
+	width: 250px;
+}
+
+.txt {
+	border-radius: 5px;
+	width: 200px;
+	height:30px;
+	text-align: right;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: bold;
+}
+
+.btn {
+	width: 40px;
+	height: 30px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: bold;
+}
+
