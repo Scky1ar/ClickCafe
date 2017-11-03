@@ -1,11 +1,107 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Click Cafe</title>
-  </head>
-  
-  <body>
-    <h1> Hello World </h1>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Calculator</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<script>
+		
+		function disp1() {
+			document.calculator.Display.value += "1";
+		}
+		
+		function disp2() {
+			document.calculator.Display.value += "2";
+		}
+		
+		function disp3() {
+			document.calculator.Display.value += "3";
+		}
+		
+		function disp4() {
+			document.calculator.Display.value += "4";
+		}
+		
+		function disp5() {
+			document.calculator.Display.value += "5";
+		}
+		
+		function disp6() {
+			document.calculator.Display.value += "6";
+		}
+		
+		function disp7() {
+			document.calculator.Display.value += "7";
+		}
+		
+		function disp8() {
+			document.calculator.Display.value += "8";
+		}
+		
+		function disp9() {
+			document.calculator.Display.value += "9";
+		}
+		function disp0() {
+			document.calculator.Display.value += "0";
+		}
+		
+		function add() {
+			document.calculator.Display.value += "+";
+		}
+		
+		function subtract() {
+			document.calculator.Display.value += "-";
+		}
+		
+		function multiply() {
+			document.calculator.Display.value += "*";
+		}
+		
+		function divide() {
+			document.calculator.Display.value += "/";
+		}
+		
+		function clearAll() {
+			document.calculator.Display.value = "";
+		}
+		
+		function equals() {
+			var eq = eval(document.calculator.Display.value);
+			document.calculator.Display.value = eq;
+		}
+		
+	</script>
+</head>
+
+<body>
+	<form name="calculator">
+	<center>
+		<div class="calc">
+			<input class="txt" type ="text" name="Display" value="">
+			<br><br>
+			<input class="btn" type="button" value="1" onClick="disp1();">
+			<input class="btn" type="button" value="2" onClick="disp2();">
+			<input class="btn" type="button" value="3" onClick="disp3();">
+			<input class="btn" type="button" value="+" onClick="add();">
+			
+			<br><br>
+			<input class="btn" type="button" value="4" onClick="disp4();">
+			<input class="btn" type="button" value="5" onClick="disp5();">
+			<input class="btn" type="button" value="6" onClick="disp6();">
+			<input class="btn" type="button" value="-" onClick="subtract();">
+			<br><br>
+			<input class="btn" type="button" value="7" onClick="disp7();">
+			<input class="btn" type="button" value="8" onClick="disp8();">
+			<input class="btn" type="button" value="9" onClick="disp9();">
+			<input class="btn" type="button" value="*" onClick="multiply();">
+			<br><br>
+			<input class="btn" type="button" value="0" onClick="disp0();">
+			<input class="btn" type="button" value="C" onClick="clearAll();">
+			<input class="btn" type="button" value="=" onClick="equals();">
+			<input class="btn" type="button" value="/" onClick="divide();">
+			
+		</div>
+	</center>	
+	</form>
+</body>
 </html>
